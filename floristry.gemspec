@@ -18,7 +18,6 @@ Gem::Specification.new do |s|
   s.test_files = Dir["spec/**/*"]
 
   s.add_runtime_dependency 'rails', '>= 4.2.8'
-  s.add_runtime_dependency 'thor', '0.19.1'
   s.add_runtime_dependency 'protected_attributes', '>= 1.0.7'
   s.add_runtime_dependency 'active_attr'
   s.add_runtime_dependency 'flor'
