@@ -8,7 +8,7 @@ require 'floristry/workflow_engine'
 require 'forwardable'
 require 'active_attr'
 require 'active_model'
-require 'active_model/mass_assignment_security'
+# require 'active_model/mass_assignment_security'
 
 module Floristry
 
