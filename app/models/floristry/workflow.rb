@@ -62,7 +62,7 @@ module Floristry
         @terminated_at
       else
 
-        if wi.respond_to? :updated_at
+        if wi&.respond_to? :updated_at
 
           wi.updated_at
         else
