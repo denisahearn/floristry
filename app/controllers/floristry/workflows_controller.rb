@@ -9,7 +9,13 @@ module Floristry
 
     def edit
 
-      @wf ||= Workflow.find(params[:id])
+      @wf ||= begin
+        wf = Workflow.find(params[:id])
+        wf.collection
+        wf
+      rescue
+        wf
+      end
     end
 
     def update
