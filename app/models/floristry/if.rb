@@ -17,6 +17,7 @@ module Floristry
 
       comp_val = att
       if comp_val.is_a? Array
+        Rails.logger.info "*** comp_val = #{comp_val.inspect}"
         comp_val = "#{comp_val[0][1]}.#{comp_val[1][1]}"
       end
       comp_val
